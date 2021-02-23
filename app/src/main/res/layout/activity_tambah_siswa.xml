@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".klkd.TambahSiswaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_siswa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Daftar Nama Siswa"
+        app:titleTextColor="@color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/addSiswa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_siswa">
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.bitvale.lavafab.LavaFab
+        android:id="@+id/lava_fab_tbSiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lavaBackgroundColor="@color/biru"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:lavaChild="left|top"
+        app:lavaDrawShadow="true"
+        app:lavaLeftIcon="@drawable/ic_home"
+        app:lavaParentIcon="@drawable/ic_toys"
+        app:lavaParentSize="60dp"
+        app:lavaTopIcon="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

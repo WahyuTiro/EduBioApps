@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Matching.Tampilan.HasilGameMatching">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/biru"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/cross_score"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/medali"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/medali"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"
+            android:src="@drawable/medali"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtHasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/hasil_jawaban"
+                android:textSize="20dp"
+                android:textColor="@color/biru"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/dividerTurun1"
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 1  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 2  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 3  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 4  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 5  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 6  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 7  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 8  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 9  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtHasil110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. 10  →  "
+                    android:textSize="14sp"
+                    android:textColor="@color/biru"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editMath10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="2"
+                    android:gravity="center"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ket10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:gravity="left"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/valid" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/black" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/green">
+
+                <TextView
+                    android:id="@+id/txtpen"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pend_crosss" />
+
+                <TextView
+                    android:id="@+id/penjelasan1"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching1" />
+
+                <TextView
+                    android:id="@+id/soal2"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching2" />
+
+                <TextView
+                    android:id="@+id/soal3"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching3" />
+
+                <TextView
+                    android:id="@+id/soal4"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching4" />
+
+                <TextView
+                    android:id="@+id/soal5"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching5" />
+
+                <TextView
+                    android:id="@+id/soal6"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching6" />
+
+                <TextView
+                    android:id="@+id/soal7"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching7" />
+
+                <TextView
+                    android:id="@+id/soal8"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching8" />
+
+                <TextView
+                    android:id="@+id/soal9"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching9" />
+
+                <TextView
+                    android:id="@+id/soal10"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/p_matching10" />
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/btn_rounded"
+                    android:gravity="center"
+                    android:onClick="handlehome"
+                    android:text="@string/backhome"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

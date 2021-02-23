@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "825612737291",
+    "project_id": "appbiosisko",
+    "storage_bucket": "appbiosisko.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825612737291:android:cf46ea8fa3bd166f49e00e",
+        "android_client_info": {
+          "package_name": "com.wahyu.biosisko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825612737291-fjpb7tierc8gd735pspv6i2p2cnql85r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wahyu.biosisko",
+            "certificate_hash": "df2dbe3da9c82342e18a946f690aaa77c286e0b3"
+          }
+        },
+        {
+          "client_id": "825612737291-tgb7k9ifmaps57ch863jb9lng2ucp6dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW5LzvkjfGni_CRjGO21531q7ia6iP_Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825612737291-tgb7k9ifmaps57ch863jb9lng2ucp6dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.wahyu.biosisko.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_menuKIKDActivity"
+            app:destination="@id/menuKIKDActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_menuMateriActivity"
+            app:destination="@id/menuMateriActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_menuVideoActivity"
+            app:destination="@id/menuVideoActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_evaluasiActivity"
+            app:destination="@id/evaluasiActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_petunjukActivity"
+            app:destination="@id/petunjukActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_profilActivity"
+            app:destination="@id/profilActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/menuKIKDActivity"
+        android:name="com.wahyu.biosisko.MenuKIKDActivity"
+        android:label="activity_menu_kikd"
+        tools:layout="@layout/activity_menu_kikd" />
+    <activity
+        android:id="@+id/menuMateriActivity"
+        android:name="com.wahyu.biosisko.MenuMateriActivity"
+        android:label="activity_menu_materi"
+        tools:layout="@layout/activity_menu_materi" />
+    <activity
+        android:id="@+id/menuVideoActivity"
+        android:name="com.wahyu.biosisko.MenuVideoActivity"
+        android:label="activity_menu_video"
+        tools:layout="@layout/activity_menu_video" />
+    <activity
+        android:id="@+id/evaluasiActivity"
+        android:name="com.wahyu.biosisko.EvaluasiActivity"
+        android:label="activity_evaluasi"
+        tools:layout="@layout/activity_menu_evaluasi" />
+    <activity
+        android:id="@+id/petunjukActivity"
+        android:name="com.wahyu.biosisko.PetunjukActivity"
+        android:label="activity_petunjuk"
+        tools:layout="@layout/activity_petunjuk" />
+    <activity
+        android:id="@+id/profilActivity"
+        android:name="com.wahyu.biosisko.ProfilActivity"
+        android:label="activity_profil"
+        tools:layout="@layout/activity_profil" />
+</navigation>

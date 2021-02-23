@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#ffffff</color>
+    <color name="biru_tua">#285FBA</color>
+    <color name="biru">#1e3459</color>
+    <color name="biru_muda">#a8dadb</color>
+    <color name="birusoft">#609BFC</color>
+    <color name="animal_card">#f7f6e2</color>
+    <color name="hijau_gelap">#089000</color>
+    <color name="latar">#9d65c9</color>
+    <color name="abu_abu">#f5f5f5</color>
+
+    <color name="green">#2A4CAF50</color>
+    <color name="valid">#12AD2A</color>
+
+    <color name="dot_dark_screen1">#03105A</color>
+    <color name="dot_dark_screen2">#03105A</color>
+    <color name="dot_dark_screen3">#03105A</color>
+
+    <color name="dot_light_screen1">#2C03105A</color>
+    <color name="dot_light_screen2">#2C03105A</color>
+    <color name="dot_light_screen3">#2C03105A</color>
+    <color name="orange">#CC9900</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+</resources>

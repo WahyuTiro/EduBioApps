@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wahyu.biosisko">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".Riddles.Tampilan.HasilGameRiddles"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Riddles.Tampilan.PlayGameRiddles"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Riddles.Tampilan.HomeGameRiddles"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Matching.Tampilan.HasilGameMatching"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Matching.Tampilan.PlayGameMatching"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Matching.Tampilan.HomeGameMatching"
+            android:screenOrientation="portrait" />
+            
+        <activity
+            android:name=".CrossWords.Tampilan.HasilGameCrossword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CrossWords.Tampilan.PlayGameCrossword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CrossWords.Tampilan.HomeGameCrossword"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".materi.SistemIndera"
+            android:screenOrientation="portrait" />
+        <activity android:name=".materi.SistemHormon"
+            android:screenOrientation="portrait" />
+        <activity android:name=".materi.GangguanSistemRegulasi"
+            android:screenOrientation="portrait" />
+        <activity android:name=".materi.SistemSaraf"
+            android:screenOrientation="portrait" />
+        <activity android:name=".klkd.GlosariumActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Quiz.PlayQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Quiz.HomeQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PetunjukActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SpiritualActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProfilActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".playvideos.VideoTiga"
+            android:screenOrientation="portrait" />
+        <activity android:name=".playvideos.VideoDua"
+            android:screenOrientation="portrait" />
+        <activity android:name=".playvideos.VideoSatu"
+            android:screenOrientation="portrait" />
+        <activity android:name=".klkd.TambahSiswaActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".klkd.TujuanPembelajaranActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".klkd.IndikatorPembelajaranActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".klkd.KompetensiDasarActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".klkd.KompetensiIntiActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EvaluasiActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MenuMateriActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MenuKIKDActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MenuVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

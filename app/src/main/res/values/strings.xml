@@ -1,0 +1,558 @@
+<resources>
+    <string name="app_name">Bio Education</string>
+    <string name="text_pendahuluan">Pendahuluan</string>
+    <string name="text_materi">Materi</string>
+    <string name="text_evaluasi">Evaluasi</string>
+    <string name="text_video">Video</string>
+    <string name="text_petunjuk">Petunjuk</string>
+    <string name="text_profil">Profil</string>
+    <string name="text_intro">INTRO</string>
+    <string name="text_pengantar">Fitur Aplikasi Biologi Education Ini Terdiri Dari Menu: Pendahuluan, Materi, Evaluasi, Video, Petunjuk Dan Profil</string>
+
+    <string name="welcome">Selamat Datang...</string>
+    <string name="dashboard_home">DASHBOARD</string>
+    <string name="sistem_saraf">Sistem Saraf</string>
+    <string name="gangguan_sistem_regulasi">Gangguan Sistem Regulasi</string>
+    <string name="sistem_saraf_tepi">Sistem Saraf Tepi</string>
+    <string name="sistem_hormon">Sistem Hormon</string>
+    <string name="sistem_indera">Sistem Indera</string>
+    <string name="glosarium">Glosarium</string>
+
+    <string name="evaluasi">Yuk dibaca evaluasinya !</string>
+    <string name="eva">Evaluasi</string>
+    <string name="nok_1">1</string>
+    <string name="nok_2">2</string>
+    <string name="nok_3">3</string>
+    <string name="nok_4">4</string>
+    <string name="nok_5">5</string>
+    <string name="nok_6">6</string>
+    <string name="nok_7">7</string>
+    <string name="nok_8">8</string>
+    <string name="nok_9">9</string>
+    <string name="nok_10">10</string>
+    <string name="cross_score">Your Score</string>
+    <string name="mendatar">MENDATAR</string>
+    <string name="menurun">MENURUN</string>
+
+    <string name="soalcross1">Kumpulan badan-badan sel saraf </string>
+    <string name="soalcross2">Otak besar </string>
+    <string name="soalcross3">Hormon yang berperan dalam mengatur aktivitas tidur kita</string>
+    <string name="soalcross4">Selaput otak berupa jaring, terletak antara piameter dan durameter</string>
+    <string name="soalcross5">Pertemuan antara akson dengan dendrit atau efektor</string>
+    <string name="soalcross6">Serabut saraf yang menyalurkan impuls ke badan sel </string>
+    <string name="soalcross7">Neuron yang mentransmisikan impuls dari satu neuron ke neuron lain</string>
+    <string name="soalcross8">Hormon yang berfungsi membantu metabolisme tubuh</string>
+    <string name="soalcross9">Serabut saraf yang menyalurkan impuls dari badan sel</string>
+    <string name="soalcross10">Pesan yang diterima oleh reseptor </string>
+
+    <string name="p_cross1">Kumpulan badan-badan sel saraf </string>
+    <string name="p_cross2">Otak besar </string>
+    <string name="p_cross3">Hormon yang berperan dalam mengatur aktivitas tidur kita</string>
+    <string name="p_cross4">Selaput otak berupa jaring, terletak antara piameter dan durameter</string>
+    <string name="p_cross5">Pertemuan antara akson dengan dendrit atau efektor</string>
+    <string name="p_cross6">Serabut saraf yang menyalurkan impuls ke badan sel </string>
+    <string name="p_cross7">Neuron yang mentransmisikan impuls dari satu neuron ke neuron lain</string>
+    <string name="p_cross8">Hormon yang berfungsi membantu metabolisme tubuh</string>
+    <string name="p_cross9">Serabut saraf yang menyalurkan impuls dari badan sel</string>
+    <string name="p_cross10">Pesan yang diterima oleh reseptor </string>
+
+    <string name="j_cross1">1. GANGLION</string>
+    <string name="j_cross2">2. CEREBRUM</string>
+    <string name="j_cross3">3. MELATONIN </string>
+    <string name="j_cross4">4. ARACHNOID</string>
+    <string name="j_cross5">5. SINAPSIS</string>
+    <string name="j_cross6">6. DENDRIT</string>
+    <string name="j_cross7">7. INTERNEURON</string>
+    <string name="j_cross8">8. TIROID</string>
+    <string name="j_cross9">9. AKSON</string>
+    <string name="j_cross10">10. IMPULS</string>
+
+    <string name="chat_forum">Chat Forum</string>
+    <string name="quiz">Quiz</string>
+    <string name="highscore">HighScore: 0</string>
+    <string name="profil">Profil Pemateri</string>
+    <string name="materi_clue">Yuk dibaca materinya !</string>
+    <string name="evaluasi_clue">Evaluasi</string>
+    <string name="materi">Materi</string>
+    <string name="play_video">Play Video</string>
+    <string name="score">Score: 0</string>
+    <string name="timer">00:20</string>
+    <string name="question_1_x">Question 1/X</string>
+    <string name="question">This is Question  This is Question</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="option_5">Option 5</string>
+    <string name="submit">Submit</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_ans_first">Select Ans First</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+
+    <string name="instagram">Instagram</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="facebook">Facebook</string>
+    <string name="ttdua">:</string>
+
+    <string name="myscore">My Score :</string>
+
+    <string name="kompetensi_dasar">Kompetensi Dasar</string>
+    <string name="kompetensi_inti">Kompetensi Inti</string>
+    <string name="facebook_application_id">facebook_application_id</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="tambahkan">Tambahkan</string>
+    <string name="masukkan_nama_lengkap">Masukkan Nama Lengkap</string>
+    <string name="masukkan_nisn">Masukkan NISN</string>
+    <string name="tambahkan_identitas">Tambahkan Identitas</string>
+    <string name="welcome_to_discussion_forum">Selamat Datang di Forum Diskusi</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Buat Akun Untuk Masuk</string>
+    <string name="author">author</string>
+    <string name="time">time</string>
+    <string name="start_discussion">Mulai Diskusi</string>
+    <string name="discussion_forum">Forum Diskusi</string>
+    <string name="body">body</string>
+    <string name="type_message">Ketik pesan ...</string>
+    <string name="indikator_pembelajaran">Indikator Pembelajaran</string>
+    <string name="tujuan_pembelajaran">Tujuan Pembelajaran</string>
+
+    <!-- Profil Pemateri -->
+    <string name="userPemateri">Sitti Nurafiah</string>
+    <string name="ttlPemateri">Sengkang, 7 Maret 1997</string>
+    <string name="jkPemateri">Perempuan</string>
+    <string name="gdPemateri">O</string>
+    <string name="daPemateri">Sengkang, Kabupaten Wajo</string>
+    <string name="alPemateri">Perum Bosowa Minasa Upa B5/18</string>
+    <string name="agPemateri">Islam</string>
+    <string name="psPemateri">Pendidikan Biologi</string>
+    <string name="hpPemateri">081242182583</string>
+
+    <!-- Format Form Profil Pemateri -->
+    <string name="namaa">Nama</string>
+    <string name="tempat_tanggal_lahir">Tempat/Tanggal Lahir</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="daerah_asal">Daerah Asal</string>
+    <string name="alamat">Alamat</string>
+    <string name="agama">Agama</string>
+    <string name="program_studi">Program Studi</string>
+    <string name="pendidikan_biologi">Pendidikan Biologi</string>
+    <string name="no_hp">No. Hp</string>
+    <string name="universitas">Universitas Negeri Makassar</string>
+
+    <string name="soal1">Berikut adalah beberapa sistem organ yang terdapat dalam tubuh manusia:\n
+        1. Sistem saraf;\n
+        2. Sistem peredaran darah;\n
+        3. Sistem endokrin;\n
+        4. Sistem indra.
+    </string>
+    <string name="opsiA_1">a. 1, 2, 3</string>
+    <string name="opsiB_1">b. 1, 3, 4</string>
+    <string name="opsiC_1">c. 2, 3, 4</string>
+    <string name="opsiD_1">d. 1, 4</string>
+    <string name="opsiE_1">e. 1, 2, 3, 4</string>
+    <string name="clue1">Sistem organ yang termasuk kedalam sistem koordinasi yaitu: sistem saraf, sistem endokrin dan sistem indra.</string>
+
+    <string name="soal2">Perhatikan gambar sel saraf berikut!\n Bagian yang bernomor 1,2, dan 3 berturut-turut adalah ….</string>
+    <string name="gambar2">gambar2.png</string>
+    <string name="opsiA_2">a. Dendrit, akson, dan badan sel</string>
+    <string name="opsiB_2">b. Nukleus, dendrit, dan sel schwann</string>
+    <string name="opsiC_2">c. Dendrit, nukleus, dan badan sel</string>
+    <string name="opsiD_2">d. Akson, nukleus, dan badan sel</string>
+    <string name="opsiE_2">e. Sel schwann, akson, dan badan sel</string>
+    <string name="clue2">Dendrit, nukleus, dan badan sel</string>
+
+    <string name="soal3">Susunan saraf pusat manusia terdiri dari ….</string>
+    <string name="opsiA_3">a. Otak dan serabut saraf</string>
+    <string name="opsiB_3">b. Sumsum lanjutan dan serabut saraf</string>
+    <string name="opsiC_3">c. Sumsum lanjutan dan otak</string>
+    <string name="opsiD_3">d. Saraf sadar dan saraf tak sadar</string>
+    <string name="opsiE_3">e. Otak dan sumsum tulang belakang</string>
+    <string name="clue3">Susunan sistem saraf manusia terdiri atas otak dan sum-sum tulang belakang</string>
+
+    <string name="soal4">Bagian otak besar yang berperan dalam ingatan dan emosi adalah lobus ….</string>
+    <string name="opsiA_4">a. Frontalis</string>
+    <string name="opsiB_4">b. Temporalis</string>
+    <string name="opsiC_4">c. Parietalis</string>
+    <string name="opsiD_4">d. Oksipitalis</string>
+    <string name="opsiE_4">e. Anterior</string>
+    <string name="clue4">Bagian otak yang berperan penting dalam ingatan dan emosi adalah lobus frontalis</string>
+
+    <string name="soal5">Berikut ini adalah pengaruh dari saraf simpatik pada kerja organ tubuh, kecuali ….</string>
+    <string name="opsiA_5">a. Mempercepat denyut jantung.</string>
+    <string name="opsiB_5">b. Memperbesar pupil mata.</string>
+    <string name="opsiC_5">c. Mempercepat proses pencernaan.</string>
+    <string name="opsiD_5">d. Menghambat keluarnya air ludah.</string>
+    <string name="opsiE_5">e. Menghambat kontraksi kandung kemih.</string>
+    <string name="clue5">Beberapa pengaruh dari saraf simpatik pada kerja organ tubuh yaitu mempercepat denyut jantung, memperbesar pupil mata, menghambat keluarnya air ludah dan menghambat kontraksi kandung kemih. </string>
+
+    <string name="soal6">Neuron yang berfungsi menghantarkan impuls saraf dari alat indera menuju ke otak atau sumsum tulang belakang adalah ….</string>
+    <string name="opsiA_6">a. Neuron bipolar</string>
+    <string name="opsiB_6">b. Neuron sensorik</string>
+    <string name="opsiC_6">c. Neuron motorik</string>
+    <string name="opsiD_6">d. Neuron konektor</string>
+    <string name="opsiE_6">e. Neuron unipolar</string>
+    <string name="clue6">Neuron yang berfungsi menghantarkan impuls saraf dari alat indera menuju ke otak atau sumsum tulang belakang yaitu neuron sensorik</string>
+
+    <string name="soal7">Jika proses gerak yang diatur oleh sistem saraf disadari, impuls akan menempuh jalan sebagai berikut ….</string>
+    <string name="opsiA_7">a. Reseptor → neuron sensorik → otak → neuron motorik → efektor</string>
+    <string name="opsiB_7">b. Reseptor → neuron sensorik → interneuron → neuron motorik → efektor</string>
+    <string name="opsiC_7">c. Reseptor → neuron motorik → otak → neuron sensorik → efektor</string>
+    <string name="opsiD_7">d. Reseptor → neuron motorik → sumsum tulang belakang → efektor</string>
+    <string name="opsiE_7">e. Reseptor → neuron sensorik → neuron konektor → otak → efektor</string>
+    <string name="clue7">proses jalannya impuls dimulai dari resptor atau indra kemudian diteruskan ke neuron sensorik kemudian diteruskan ke otak kemudian diteruskan ke neuron motorik dan diteruskan ke efektor</string>
+
+    <string name="soal8">Sistem saraf keseimbangan disebut juga…</string>
+    <string name="opsiA_8">a. Fotoreseptor</string>
+    <string name="opsiB_8">b. Fonoreseptor</string>
+    <string name="opsiC_8">c. Kemoreseptor</string>
+    <string name="opsiD_8">d. Stratoreseptor</string>
+    <string name="opsiE_8">e. Reseptor </string>
+    <string name="clue8">Fotoreseptor:   saraf mata,\n
+        Fonoreseptor:   telinga,\n
+        Kemoreseptor:  lidah/hidung,\n
+        Stratoreseptor:   saraf keseimbangan,\n
+        Reseptor:    penerima rangsang
+    </string>
+
+    <string name="soal9">Bagian X adalah otak tengah (mesensefalon) kerusakan di bagian ini menyebabkan . . . .</string>
+    <string name="gambar9">gambar9.png</string>
+    <string name="opsiA_9">a. Hilangnya ingatan</string>
+    <string name="opsiB_9">b. Terganggunya pengelihatan</string>
+    <string name="opsiC_9">c. Tidak dapat berbicara</string>
+    <string name="opsiD_9">d. Denyut jantung tidak teratur</string>
+    <string name="opsiE_9">e. Hilangnya keseimbangan</string>
+    <string name="clue9">Kerusakan yang terjadi di otak tengah dapat menyebabkan gangguan penglihatan</string>
+
+    <string name="soal10">Kelenjar yang menghasilkan hormon insulin dan hormon glukagon adalah ….</string>
+    <string name="opsiA_10">a. Kelenjar pankreas.</string>
+    <string name="opsiB_10">b. Kelenjar hipofisis lobus posterior.</string>
+    <string name="opsiC_10">c. Kelenjar hipofisis lobus anterior.</string>
+    <string name="opsiD_10">d. Kelenjar timus.</string>
+    <string name="opsiE_10">e. Kelenjar paratiroid.</string>
+    <string name="clue10">Kelenjar pankreas adalah kelenjar yang menghasilkan hormon insulin dan hormon glukagon</string>
+
+    <string name="soal11">Adrenalin adalah hormon yang berfungsi untuk ….</string>
+    <string name="opsiA_11">a. Mengatur metabolisme</string>
+    <string name="opsiB_11">b. Mempengaruhi kerja hormon lainnya</string>
+    <string name="opsiC_11">c. Merangsang kerja usus</string>
+    <string name="opsiD_11">d. Mengatur metabolisme senyawa fosfat</string>
+    <string name="opsiE_11">e. Menaikkan tekanan darah dengan mengubah glikogen</string>
+    <string name="clue11">Fungsi hormon adrenalin yaitu menaikkan tekanan darah dengan mengubah glikogen</string>
+
+    <string name="soal12">Zat kimia yang dapat menstimulasi susunan saraf pusat pada kopi dan teh adalah ….</string>
+    <string name="opsiA_12">a. Tar</string>
+    <string name="opsiB_12">b. Morfin</string>
+    <string name="opsiC_12">c. Kafein</string>
+    <string name="opsiD_12">d. Nikotin</string>
+    <string name="opsiE_12">e. Ganja </string>
+    <string name="clue12">Kafein adalah zat kimia yang dapat menstimulus susunan saraf pusat</string>
+
+    <string name="soal13">Nama lain dari kelenjar hipofisa yaitu….</string>
+    <string name="opsiA_13">a. Paratiroid</string>
+    <string name="opsiB_13">b. Master gland</string>
+    <string name="opsiC_13">c. Tiroid </string>
+    <string name="opsiD_13">d. Neurohipofisa</string>
+    <string name="opsiE_13">e. Hipotalamus</string>
+    <string name="clue13"> </string>
+
+    <string name="soal14">Yang berfungsi mempengaruhi kelompok Thyroid adalah Hormone….</string>
+    <string name="opsiA_14">a. GTH</string>
+    <string name="opsiB_14">b. FSH</string>
+    <string name="opsiC_14">c. LH</string>
+    <string name="opsiD_14">d. TSH</string>
+    <string name="opsiE_14">e. ICSH</string>
+    <string name="clue14"> </string>
+
+    <string name="soal15">Di bawah ini yang bukan merupakan hormon-homon steroid adalah….</string>
+    <string name="opsiA_15">a. Cortisol</string>
+    <string name="opsiB_15">b. Testosterone</string>
+    <string name="opsiC_15">c. Progresteron</string>
+    <string name="opsiD_15">d. Esterogen</string>
+    <string name="opsiE_15">e. Insulin</string>
+    <string name="clue15"> </string>
+
+    <string name="soal16">Perhatikan gambar indra penglihatan berikut untuk menjawab soal.\n Bagian mata no. 3 berfungsi untuk ….</string>
+    <string name="gambar16">gambar16.png</string>
+    <string name="opsiA_16">a. Memberi warna mata</string>
+    <string name="opsiB_16">b. Mengatur jumlah cahaya yang masuk ke mata</string>
+    <string name="opsiC_16">c. Membiaskan cahaya ke bagian dalam mata</string>
+    <string name="opsiD_16">d. Sebagai penyangga lensa kristalin</string>
+    <string name="opsiE_16">e. Mensuplai kebutuhan makanan dan oksigen ke retina</string>
+    <string name="clue16">Gambar nomor 3 adalah iris yang berfungsi memberi warna mata dan mengatur perbesaran pupil</string>
+
+    <string name="soal17">Perhatikan gambar indra penglihatan berikut untuk menjawab soal.\n Bagian mata yang berfungsi untuk mengatur jumlah cahaya yang masuk ke mata ditunjukkan oleh nomor ….</string>
+    <string name="gambar17">gambar16.png</string>
+    <string name="opsiA_17">a. 1</string>
+    <string name="opsiB_17">b. 4</string>
+    <string name="opsiC_17">c. 5</string>
+    <string name="opsiD_17">d. 7</string>
+    <string name="opsiE_17">e. 10</string>
+    <string name="clue17">Bagian mata yang berfungsi untuk mengatur jumlah cahaya yang masuk ke mata adalah pupil  yang ditunjukkan pada nomor 4</string>
+
+    <string name="soal18">Perhatikan gambar indra penglihatan berikut untuk menjawab soal.\n Bagian mata yang mampu mengubah bentuknya sehingga memungkinkan kita untuk melihat objek dekat dan jauh ditunjukkan oleh nomor ….</string>
+    <string name="gambar18">gambar16.png</string>
+    <string name="opsiA_18">a. 3</string>
+    <string name="opsiB_18">b. 6</string>
+    <string name="opsiC_18">c. 8</string>
+    <string name="opsiD_18">d. 9</string>
+    <string name="opsiE_18">e. 11</string>
+    <string name="clue18">Bagian mata yang mampu mengubah bentuknya sehingga memungkinkan kita untuk melihat objek dekat dan jauh adalah lensa mata yang ditunjukkan pada nomor 6</string>
+
+    <string name="soal19">Perhatikan gambar indra penglihatan berikut untuk menjawab soal.\n Bagian mata yang berfungsi untuk mensuplai nutrisi dan O2 bagi retina ditunjukkan dengan nomor ….</string>
+    <string name="gambar19">gambar16.png</string>
+    <string name="opsiA_19">a. 2</string>
+    <string name="opsiB_19">b. 5</string>
+    <string name="opsiC_19">c. 7</string>
+    <string name="opsiD_19">d. 8</string>
+    <string name="opsiE_19">e. 9</string>
+    <string name="clue19">Koroid berfungsi memberi zat makanan pada retina yang berupa nutrisi dan O2  yang ditunjukkan pada nomor 9</string>
+
+    <string name="soal20">Apabila kita mencium masakan yang sedap, air liur terangsang mau keluar. Hal ini menunjukkan adanya hubungan antara indra ….</string>
+    <string name="opsiA_20">Perasa dan pengecap.</string>
+    <string name="opsiB_20">Perasa dan peraba.</string>
+    <string name="opsiC_20">Pembau dan perasa.</string>
+    <string name="opsiD_20">Pembau dan pengecap.</string>
+    <string name="opsiE_20">Penglihat dan pembau.</string>
+    <string name="clue20"> </string>
+
+    <string name="soal21">Pada telinga tengah terdapat tulang-tulang kecil yang terangkai berurutan dari luar ke dalam adalah ….</string>
+    <string name="opsiA_21">a. Martil-landasan-sanggurdi</string>
+    <string name="opsiB_21">b. Martil-sanggurdi-landasan</string>
+    <string name="opsiC_21">c. Landasan-martil-sanggurdi</string>
+    <string name="opsiD_21">d. Landasan-sanggurdi-martil</string>
+    <string name="opsiE_21">e. Sanggurdi-landasan-martil</string>
+    <string name="clue21">Urutan tulang-tulang kecil pada telinga dari luar ke dalam yaitu tulang martil, tulang landasan dan tulang sanggurdi</string>
+
+    <string name="soal22">Penyebab dari orang yang terkena penyakit ini adalah ….</string>
+    <string name="gambar22">gambar22.png</string>
+    <string name="opsiA_22">a. Kekurangan yodium</string>
+    <string name="opsiB_22">b. Kekurangan hormon tiroid</string>
+    <string name="opsiC_22">c. Kurangnya vitamin A dalam tubuh</string>
+    <string name="opsiD_22">d. Kelebihan zat lemak</string>
+    <string name="opsiE_22">e. Kelebihan vitamin D dalam tubuh</string>
+    <string name="clue22">Penyebab dari penyakit hipotiroid salah satunya yaitu kekurangan yodium</string>
+
+    <string name="soal23">Alat indera yang terdapat organ korti  berupa rambut halus adalah  ….</string>
+    <string name="opsiA_23">a. Mata</string>
+    <string name="opsiB_23">b. Lidah</string>
+    <string name="opsiC_23">c. Hidung</string>
+    <string name="opsiD_23">d. Kulit</string>
+    <string name="opsiE_23">e. Telinga</string>
+    <string name="clue23">Pada telinga tedapat organ korti berupa rambut halus</string>
+
+    <string name="soal24">Struktur lidah yang berbentuk seperti rambut-rambut halus disebut ….</string>
+    <string name="opsiA_24">a. Papilla</string>
+    <string name="opsiB_24">b. Epiglotis</string>
+    <string name="opsiC_24">c. Sel basal</string>
+    <string name="opsiD_24">d. Epitelium</string>
+    <string name="opsiE_24">e. Organ korti</string>
+    <string name="clue24">Di permukaan lidah, terdapat struktur yang berbentuk seperti rambut-rambut halus disebut papila</string>
+
+    <string name="soal25">Saluran Eustachius yang berada di bawah ossikula telinga tengah yang bertugas menghubungkan telinga tengah dengan ….</string>
+    <string name="opsiA_25">a. Mulut</string>
+    <string name="opsiB_25">b. Mata</string>
+    <string name="opsiC_25">c. Tenggorokan</string>
+    <string name="opsiD_25">d. Paru-Paru</string>
+    <string name="opsiE_25">e. Jantung</string>
+    <string name="clue25">Saluran eustachius adalah saluran pada telinga tengah yang terhubung dengan tenggorokan</string>
+
+    <string name="soal26">Membran Tympani berada di telinga pada bagian  ….</string>
+    <string name="opsiA_26">a. Telinga Luar</string>
+    <string name="opsiB_26">b. Telinga Tengah</string>
+    <string name="opsiC_26">c. Telinga Dalam</string>
+    <string name="opsiD_26">d. Tulang Sanggurdi</string>
+    <string name="opsiE_26">e. Tulang Martil</string>
+    <string name="clue26"> </string>
+
+    <string name="soal27">Kelenjar endokrin yang bekerja hanya sampai saat tertentu saja adalah kelenjar</string>
+    <string name="opsiA_27">a. Hipofisis </string>
+    <string name="opsiB_27">b. Tiroid dan paratiroid </string>
+    <string name="opsiC_27">c. Pankreas </string>
+    <string name="opsiD_27">d. Timus </string>
+    <string name="opsiE_27">e. Gonad </string>
+    <string name="clue27">Kelenjar timus hanya dijumpai pada anak-anak usia di bawah 18 tahun</string>
+
+    <string name="soal28">Labirin adalah nama lain dari ….</string>
+    <string name="opsiA_28">a. Telinga Luar</string>
+    <string name="opsiB_28">b. Telinga Tengah</string>
+    <string name="opsiC_28">c. Telinga Dalam</string>
+    <string name="opsiD_28">d. Tulang Sanggurdi</string>
+    <string name="opsiE_28">e. Tulang Martil</string>
+    <string name="clue28"> </string>
+
+    <string name="soal29">Perhatikan urutan di bawah ini!\n
+        1. neurotransmitter diterima oleh reseptor;\n
+        2. ujung akson menyampaikan impuls membentuk tonjolan kecil;\n
+        3. permeabilitas membran membuat ion kalsium meningkat dan membentuk gelombang sinaps yang menghasilkan zat transmitter (depolarisasi);\n
+        4. neurotransmitter menuju neuron selanjutnya; 5. vesikel bergabung (fusi) dengan membrane sel dan mengeluarkan neurotransmitter.\n
+        Urutan yang benar dari jalannya impuls pada sinaps adalah…
+    </string>
+    <string name="opsiA_29">a. 1 → 2 → 3 → 4 → 5 </string>
+    <string name="opsiB_29">b. 2 → 3 → 5 → 1 → 4</string>
+    <string name="opsiC_29">c. 3 → 4 → 5 → 2 → 1 </string>
+    <string name="opsiD_29">d. 4 → 5 → 3 → 2 → 1</string>
+    <string name="opsiE_29">e. 5 → 4 → 3 → 2 → 1</string>
+    <string name="clue29"> </string>
+
+    <string name="soal30">Seorang siswa akan melakukan percobaan untuk mempelajari persepsi termoreseptor pada kulit. Diketahui bahwa letak korpuskula ruffini lebih atas dibandingkan ujung saraf Krause. Siswa tersebut melakukan percobaan dengan mencelupkan jari kanan pada air panas dan jari kiri pada air dingin selama satu menit. Setelah itu, kedua jari tersebut dicelupkan pada air hangat. Siswa tersebut akan menghitung waktu yang dibutuhkan kedua jari tersebut untuk merasakan perubahan suhu. Hipotesis yang dapat diajukan oleh siswa tersebut adalah…</string>
+    <string name="opsiA_30">a. jari kanan akan lebih cepat merasakan perubahan suhu dibandingkan jari kiri</string>
+    <string name="opsiB_30">b. jari kiri akan lebih cepat merasakan perubahan suhu dibandingkan jari kanan</string>
+    <string name="opsiC_30">c. jari kanan dan jari kiri dapat merasakan perubahan suhu dengan waktu yang sama</string>
+    <string name="opsiD_30">d. jari kanan akan merasakan rasa panas lebih lama</string>
+    <string name="opsiE_30">e. jari kiri akan merasakan rasa panas lebih lama</string>
+    <string name="clue30"> </string>
+
+    <string name="soal31">Lilis menjadi korban kebakaran yang terjadi di rumahnya. Ketika luka bakarnya disentuh dengan kapas, ia tidak merasakan apa-apa. Berdasarkan hal tersebut, pernyataan yang sesuai dengan kondisi Lilis adalah…</string>
+    <string name="opsiA_31">a. reseptor pada kulit terkikis hingga ke lapisan dermis sehingga Lilis tidak merasakan sakit</string>
+    <string name="opsiB_31">b. reseptor rasa sakit pada kulit terkikis bersama lapisan epidermis sehingga Lilis tidak merasakan sakit</string>
+    <string name="opsiC_31">c. reseptor rasa sakit dan panas terkikis lapisan epidermis sehingga Lilis tidak merasakan sakit</string>
+    <string name="opsiD_31">d. kulit terbakar cukup lama sehingga darah melapisi luka bakar tersebut yang mengakibatkan reseptor pada kulit kebal akan rasa sakit</string>
+    <string name="opsiE_31">e. reseptor pada kulit tidak berfungsi akibat luka bakar, sehingga Lilis tidak merasakan sakit</string>
+    <string name="clue31"> </string>
+
+    <string name="soal32">Pada saat bayi, kelenjar timus berukuran besar, tetapi setelah melewati masa pubertas atau sudah dewasa, ukuran kelenjar timus semakin kecil. Mengapa demikian?</string>
+    <string name="opsiA_32">a. karena hormon yang dihasilkannya sangat berfungsi pada masa pertumbuhan, sedangkan saat dewasa fungsinya berkurang</string>
+    <string name="opsiB_32">b. karena hormon yang dihasilkannya sangat berfungsi pada masa dewasa</string>
+    <string name="opsiC_32">c. karena hormon yang dihasilkan menghambat proses pertumbuhan</string>
+    <string name="opsiD_32">d. karena hormon yang dihasilkan memperlambat denyut jantung</string>
+    <string name="opsiE_32">e. karena hormon yang dihasilkan menghambat proses metabolisme</string>
+    <string name="clue32">Karena pada saat bayi hingga umur 18 tahun kelenjar timus aktif untuk memproduksi hormon pertumbuhan. Setelah umur 18 tahun kelenjar ini akan berhenti bekerja.</string>
+
+    <string name="soal33">Bila kadar gula pada darah seseorang terlalu tinggi, dan menyebabkan orang tersebut menderita penyakit diabetes mellitus, maka dapat diindikasikan bahwa….</string>
+    <string name="opsiA_33">a. tubuh orang tersebut memproduksi hormon adrenalin</string>
+    <string name="opsiB_33">b. pankreas kekurangan produksi hormon insulin</string>
+    <string name="opsiC_33">c. pankreas kelebihan memproduksi hormon insulin</string>
+    <string name="opsiD_33">d. tubuh memproduksi hormon kotikotropin</string>
+    <string name="opsiE_33">e. tubuh orang tersebut tidak bisa memproduksi hormon insulin</string>
+    <string name="clue33">Insulin adalah hormon yang dihasilkan oleh kelenjar pankreas, yang berfungsi untuk menurunkan kadar glukosa dalam darah</string>
+
+    <string name="soal34">Seseorang mengalami diare dan berkeringat banyak sehingga menyebabkan kadar air dalam darah menurun, maka yang terjadi pada seseorang tersebut adalah…</string>
+    <string name="opsiA_34">a. insulin tidak dapat disekresikan </string>
+    <string name="opsiB_34">b. terjadi sekresi ADH</string>
+    <string name="opsiC_34">c. terjadi sekresi insulin</string>
+    <string name="opsiD_34">d. tidak terjadi sekresi ADH</string>
+    <string name="opsiE_34">e. sekresi ADH di dalam tubuh terhambat</string>
+    <string name="clue34">Hormon ADH adalah hormon yang dikeluarkan oleh hipotalamus (bagian bawah otak), yang berperan untuk mengatur kadar air di tubuh, melalui penyerapan kembali air pada ginjal, sehingga mempengaruhi jumlah produksi urin.</string>
+
+    <string name="soal35">Orang yang memiliki postur badan lebih tinggi dari orang normal mengalami kelainan yang disebabkan oleh…</string>
+    <string name="opsiA_35">a. kelebihan hormon tiroksin pada saat dewasa</string>
+    <string name="opsiB_35">b. kelebihan hormon somatotropin pada saat anak-anak</string>
+    <string name="opsiC_35">c. kekurangan hormon somatotropin pada saat dewasa</string>
+    <string name="opsiD_35">d. kekurangan hormon somatotropin pada saat anak-anak</string>
+    <string name="opsiE_35">e. kekurangan hormon tiroksin pada saat anak-anak</string>
+    <string name="clue35">Kelainan postur badan lebih tinggi dari orang normal disebabkan oleh kelebihan hormon somatotropin pada saat anak-anak</string>
+
+    <string name="soal36">Perhatikan gambar disamping!\n Hal yang akan terjadi saat struktur x terganggu adalah….</string>
+    <string name="gambar36">gambar36.png</string>
+    <string name="opsiA_36">a. Tubuh tidak bisa mencium bau</string>
+    <string name="opsiB_36">b. Tubuh tidak bisa menghasilkan lendir</string>
+    <string name="opsiC_36">c. Tubuh tidak bisa memerangkap kotoran dari luar</string>
+    <string name="opsiD_36">d. Tubuh tidak bisa merasakan makanan</string>
+    <string name="opsiE_36">e. Tubuh tidak bisa menghirup gas</string>
+    <string name="clue36">Fungsi rambut halus yang ada pada ronnga hidung yaitu untuk menyaring kotoran dari luar yang masuk ke dalam hidung</string>
+
+    <string name="soal37">Kita dapat mendengarkan musik karena adanya pemrosesan gelombang suara pada telinga. Urutan bagian telinga yang tepat saat telinga memproses suatu gelombang suara adalah….</string>
+    <string name="opsiA_37">a. Saluran pendengaran - membran timpani - koklea - organ korti - ostikel</string>
+    <string name="opsiB_37">b. Saluran pendengaran - organ korti membran timpani - ostikel- koklea </string>
+    <string name="opsiC_37">c. Saluran pendengaran - ostikel- membran timpani- koklea - organ korti</string>
+    <string name="opsiD_37">d. Saluran pendengaran - membran timpani - ostikel- koklea – organ korti</string>
+    <string name="opsiE_37">e. Saluran pendengaran - membran timpani - organ korti - ostikel- koklea</string>
+    <string name="clue37"> </string>
+
+    <string name="soal38">Mengapa respon yang terjadi pada gerak lebih cepat dibandingkan dengan reaksi pada gerak sadar?</string>
+    <string name="opsiA_38">a. karena gerak refleks terjadi tidak diolah di otak</string>
+    <string name="opsiB_38">b. karena gerak refleks membutuhkan daya yang sedikit</string>
+    <string name="opsiC_38">c. karena gerak refleks terjadi secara tiba-tiba</string>
+    <string name="opsiD_38">d. karena gerak refleks lebih membutuhkan sedikit tenaga</string>
+    <string name="opsiE_38">e. karena gerak refleks terjadi dan diolah di otak</string>
+    <string name="clue38">Karena rangsangan yang dihantarkan dari reseptor dihantarkan saraf sensori menuju ke sumsum tulang belakang (tidak diolah di otak, tetapi langsung dihantarkan ke neuron motorik lalu ke efektor), bukan ke otak.</string>
+
+    <string name="soal39">Hormon-hormon yang bekerja antagonis terjadi pada ....</string>
+    <string name="opsiA_39">a. insulin dan tiroksin</string>
+    <string name="opsiB_39">b. progesteron dan prolaktin</string>
+    <string name="opsiC_39">c. FSH dan LH </string>
+    <string name="opsiD_39">d. adrenalin dan tiroksin</string>
+    <string name="opsiE_39">e. insulin dan adrenalin</string>
+    <string name="clue39">Pasangan hormon yang bekerja secara antagonis diantaranya:    Insulin antagonis dengan glukagon, Insulin antagonis dengan adrenalin, Kalsitonin antagonis dengan parathormon.</string>
+
+    <string name="soal40">Salah satu reseptor yang terdapat pada kulit adalah corpus krause, reseptor ini untuk merasakan….</string>
+    <string name="opsiA_40">a. panas </string>
+    <string name="opsiB_40">b. dingin </string>
+    <string name="opsiC_40">c. halus</string>
+    <string name="opsiD_40">d. nyeri </string>
+    <string name="opsiE_40">e. kasar</string>
+    <string name="clue40"> </string>
+
+    <string name="show">Clue</string>
+    <string name="check">Check</string>
+    <string name="game">Game</string>
+
+    <string name="enter_your_text">Enter Your Text</string>
+    <string name="correct_answer_is">The Clue is</string>
+    <string name="continuee">Continue</string>
+    <string name="correct">Correct !!</string>
+    <string name="isikan_jawaban">Ketikkan Jawaban Anda Pada Kolom Dibawah ini Dengan Menemukan Sebuah Istilah Dari Kata Diatas</string>
+    <string name="isi_matching">Ketikkan Jawaban Anda Pada Kolom Dibawah ini Untuk Memasangkan Istilah Dari Kalimat Diatas</string>
+    <string name="start_game">Start</string>
+
+    <string name="spritual">Spritual</string>
+    <string name="videoClue">Yuk ditonton videonya !</string>
+    <string name="profil_siswa">Profil Siswa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_cocok_kalimat">Matching</string>
+    <string name="game_esai">Riddles</string>
+    <string name="backhome">BACK TO HOME</string>
+    <string name="pend_crosss">PENJELASAN</string>
+    <string name="playcross">PLAY</string>
+    <string name="exitcross">EXIT</string>
+    <string name="lets_play_crossword">LETS PLAY CROSSWORD</string>
+    <string name="result">RESULT</string>
+    <string name="matching">Matching</string>
+    <string name="riddles">Riddles</string>
+    <string name="crossword">Crossword</string>
+    <string name="txtmatching">MATCHING</string>
+    <string name="soal_matching">Cara mengerjakan: Pasangkanlah pernyataan-pernyataan berikut dengan pilihan jawaban yangtelah disediakan</string>
+    <string name="lets_play_matching">LETS PLAY MATCHING</string>
+    <string name="ptjMatching">Cara mengerjakan: pasangkanlah pernyataan-pernyataan berikut dengan pilihan jawaban yang telah disediakan!</string>
+    <string name="ket_jawaban_matching">Ketikkan Jawaban Anda Pada Kolom Isian Berikut.</string>
+    <string name="lets_play_riddles">LETS PLAY RIDDLES</string>
+    <string name="kop_riddles">Cara mengerjakan: Jawablah pertanyaan dengan jawaban yang singkat!</string>
+    <string name="riddles_question_1">Question 1</string>
+    <string name="riddles_question_2">Question 2</string>
+    <string name="riddles_question_3">Question 3</string>
+    <string name="riddles_question_4">Question 4</string>
+    <string name="riddles_question_5">Question 5</string>
+    <string name="riddles_question_6">Question 6</string>
+    <string name="riddles_question_7">Question 7</string>
+    <string name="riddles_question_8">Question 8</string>
+    <string name="riddles_question_9">Question 9</string>
+    <string name="riddles_question_10">Question 10</string>
+    <string name="riddlesSoal11">Berdasarkan strukturnya sel saraf dibagi atas 3, bentuk diatas dinamakan dengan...</string>
+    <string name="riddlesSoal21">Dendrit ditunjukkan oleh nomor...</string>
+    <string name="riddlesSoal31">Bagian yang di tunjukkan pada nomor 5 yaitu...</string>
+    <string name="riddlesSoal41">Bagian yang dapat merasakan pahit di tunjukkan pada nomor...</string>
+    <string name="riddlesSoal51">Bagian yang di tunjukkan pada nomor 3 adalah...</string>
+    <string name="riddlesSoal61">Retina di tunjukkan pada nomor...</string>
+    <string name="riddlesSoal71">Bagian yang berperan penting dalam menjaga keseimbangan tubuh pada saat beraktivitas di tunjukkan pada nomor...</string>
+    <string name="riddlesSoal81">Pasangan Hormon yang tidak sesuai dengan fungsinya yaitu...</string>
+    <string name="riddlesSoal91">Hormon yang mengatur kadar gula dalam darah, yaitu...</string>
+    <string name="riddlesSoal101">Bagian otak besar yang berperan penting dalam ingatan dan emosi adalah lobus...</string>
+    <string name="todo">TODO</string>
+    <string name="hasil">HASIL</string>
+    <string name="p_matching1">1. (G. Neuron sensorik) Neuron yang membawa sinyal dari reseptor dan mengirimkan informasi tentang lingkungan ke pusat - pusat pengolahan di otak dan sumsum tulang belakang. </string>
+    <string name="p_matching2">2. (I. Neurotransmitter) Sinyal dalam bentuk cairan senyawa kimia pada sistem saraf. </string>
+    <string name="p_matching3">3. (A. Cerebellum) Bagian dari otak yang berfungsi sebagai pusat pengatur keseimbangan tubuh. </string>
+    <string name="p_matching4">4. (C. Medulla oblongata) Bagian otak yang berfungsi sebagai pusat pengaturan fungsi jantung dan paru-paru. </string>
+    <string name="p_matching5">5. (F. FSH dan LH) Hormon yang dihasilkan oleh kelenjar pituitary yang berperan dalam siklus menstruasi. </string>
+    <string name="p_matching6">6. (H. Parathormon) Hormon yang dihasilkan oleh kelenjar parathyroid yang berperan dalam melarutkan kalsium tulang hingga menjadi kalsium darah. </string>
+    <string name="p_matching7">7. (J. Epinephrin) Hormon ini membuat detak jantung dan tekanan darah Anda meningkat, saat dilanda stres. </string>
+    <string name="p_matching8">8. (B. Organ korti) Bagian dari telinga yang dapat menerima rangsangan getaran suara. </string>
+    <string name="p_matching9">9. (D. Sel kerucut) Sel pada mata yang berfungsi untuk melihat pada kondisi terang dan membedakan warna. </string>
+    <string name="p_matching10">10. (E. Organ paccini) Reseptor khusus pada kulit untuk merasakan tekanan. </string>
+    <string name="mquestion_1">Question 1</string>
+    <string name="hasil_jawaban">HASIL JAWABAN</string>
+    <string name="tekan_kotak">Ketuk Kotak 2 Kali Untuk Memunculkan Pertanyaan</string>
+</resources>
+

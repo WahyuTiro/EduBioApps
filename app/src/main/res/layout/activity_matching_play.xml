@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Matching.Tampilan.HasilGameMatching">
+
+        <LinearLayout
+            android:id="@+id/linelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/biru"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgcross"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/matching"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/lets_play_matching"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linelayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/white">
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                        <TableRow
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+                                </TableLayout>
+
+                                <TextView
+                                    android:id="@+id/textcara"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="15dp"
+                                    android:text="@string/ptjMatching"
+                                    android:textColor="@color/biru"
+                                    android:textSize="14sp"/>
+
+
+                                <FrameLayout
+                                    android:id="@+id/soallayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:orientation="vertical"
+                                    android:visibility="invisible"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent">
+                                </FrameLayout>
+
+
+                                <ImageView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/matching_tabel"/>
+
+                                <TextView
+                                    android:id="@+id/textJwb"
+                                    android:textStyle="bold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:text="@string/isi_matching"
+                                    android:textSize="14sp"/>
+
+
+                                <TableLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="20dp">
+
+                                        <TableRow
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textJwb1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 1  → "
+                                                    android:gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath1"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <TextView
+                                                    android:id="@+id/textJwb6"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 6  → "
+                                                    android:gravity="center"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath6"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textJwb2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 2  → "
+                                                    android:gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath2"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/textJwb7"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 7  → "
+                                                    android:gravity="center"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath7"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textJwb3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 3  → "
+                                                    android:gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath3"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <TextView
+                                                    android:id="@+id/textJwb8"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 8  → "
+                                                    android:gravity="center"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath8"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textJwb4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 4  → "
+                                                    android:gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath4"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <TextView
+                                                    android:id="@+id/textJwb9"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 9   → "
+                                                    android:gravity="center"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath9"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+                                        </TableRow>
+
+                                        <TableRow
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center">
+
+                                                <TextView
+                                                    android:id="@+id/textJwb5"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 5   → "
+                                                    android:gravity="center"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath5"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <TextView
+                                                    android:id="@+id/textJwb10"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="No. 10 →  "
+                                                    android:gravity="center"
+                                                    android:layout_marginLeft="50dp"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+
+                                                <EditText
+                                                    android:id="@+id/editMath10"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:ems="2"
+                                                    android:gravity="center"
+                                                    android:importantForAutofill="no"
+                                                    android:inputType="textCapCharacters"
+                                                    android:maxLength="1"
+                                                    android:textColor="@color/biru_tua"
+                                                    android:textSize="14sp"
+                                                    android:textStyle="bold"/>
+                                        </TableRow>
+                                </TableLayout>
+
+                                <Button
+                                    android:id="@+id/button_hasil"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/rounded_result"
+                                    android:lineSpacingExtra="14sp"
+                                    android:padding="10dp"
+                                    android:text="@string/result"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="20dp" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

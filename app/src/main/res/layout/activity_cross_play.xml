@@ -1,0 +1,1804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".CrossWords.Tampilan.PlayGameCrossword">
+
+        <FrameLayout
+            android:id="@+id/soallayout"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_soal"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/button_hasil"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linelayout">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/biru"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imgcross"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crossword"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/lets_play_crossword"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_hasil"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_result"
+            android:lineSpacingExtra="14sp"
+            android:padding="10dp"
+            android:text="@string/result"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linelayout"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soallayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/layscroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="360dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="334dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="309dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="285dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="284dp"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="262dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="259dp"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="234dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="208dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="209dp"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_end="195dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="159dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="134dp"
+                                    app:layout_constraintGuide_end="243dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_end="270dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="84dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_begin="59dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_end="345dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/verline2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    app:layout_constraintGuide_end="388dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_begin="385dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="45dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="70dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="95dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="120dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="145dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="170dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="195dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="220dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="245dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="270dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="119dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="295dp"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="320dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginTop="56dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="345dp"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="370dp" />
+
+                                <androidx.constraintlayout.widget.Guideline
+                                    android:id="@+id/horline01"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layout_constraintGuide_end="395dp" />
+
+
+                                <EditText
+                                    android:id="@+id/edit11"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline1"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline01" />
+
+                                <TextView
+                                    android:id="@+id/txtNo1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_1"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal1"
+                                    android:text="@string/nok_1"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit11"
+                                    app:layout_constraintTop_toTopOf="@+id/edit11"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit12"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline2"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline1"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit14"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline4"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline3"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit15"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline5"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline4"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit17"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline7"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline6"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit18"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline8"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline7"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit21"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline2"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline1" />
+
+                                <TextView
+                                    android:id="@+id/txtNo12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_2"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal2"
+                                    android:text="@string/nok_2"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit21"
+                                    app:layout_constraintTop_toTopOf="@+id/edit21"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit23"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline4"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline3"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit28"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline9"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline8"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit25"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit24"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline5"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline4"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit26"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline7"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline6"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit27"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal2"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline8"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline7"
+                                    tools:ignore="MissingConstraints" />
+
+
+                                <EditText
+                                    android:id="@+id/edit31"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline3"
+                                    app:layout_constraintHorizontal_bias="0.952"
+                                    app:layout_constraintStart_toStartOf="@+id/verline2"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <TextView
+                                    android:id="@+id/txtNo3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_3"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal3"
+                                    android:text="@string/nok_3"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit31"
+                                    app:layout_constraintTop_toTopOf="@+id/edit31"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit32"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline4"
+                                    app:layout_constraintStart_toStartOf="@+id/verline3"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit33"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline5"
+                                    app:layout_constraintStart_toStartOf="@+id/verline4"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit34"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2" />
+
+                                <EditText
+                                    android:id="@+id/edit35"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline7"
+                                    app:layout_constraintStart_toStartOf="@+id/verline6"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit36"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit37"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit38"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline10"
+                                    app:layout_constraintStart_toStartOf="@+id/verline9"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit39"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal3"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline3"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline2"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit42"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline4"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline3"
+                                    tools:ignore="MissingConstraints" />
+
+                                <TextView
+                                    android:id="@+id/txtNo4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_4"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal4"
+                                    android:text="@string/nok_4"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit34"
+                                    app:layout_constraintTop_toTopOf="@+id/edit34"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit43"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline5"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline4"
+                                    app:layout_constraintVertical_bias="1.0"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit44"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit45"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline7"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline6"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit46"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline8"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline7"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit47"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline9"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline8"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit49"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal4"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline11"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline10"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit51"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5" />
+
+                                <TextView
+                                    android:id="@+id/txtNo5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_5"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal5"
+                                    android:text="@string/nok_5"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit51"
+                                    app:layout_constraintTop_toTopOf="@+id/edit51"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit52"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit53"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline10"
+                                    app:layout_constraintStart_toStartOf="@+id/verline9"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit54"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5" />
+
+                                <EditText
+                                    android:id="@+id/edit55"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline12"
+                                    app:layout_constraintStart_toStartOf="@+id/verline11"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit56"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline13"
+                                    app:layout_constraintStart_toStartOf="@+id/verline12"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit57"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline14"
+                                    app:layout_constraintStart_toStartOf="@+id/verline13"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit58"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal5"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline6"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline15"
+                                    app:layout_constraintStart_toStartOf="@+id/verline14"
+                                    app:layout_constraintTop_toTopOf="@+id/horline5"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit71"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9" />
+
+                                <TextView
+                                    android:id="@+id/txtNo7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="2dp"
+
+                                    android:layout_marginTop="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_7"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal7"
+                                    android:text="@string/nok_7"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit71"
+                                    app:layout_constraintTop_toTopOf="@+id/edit71"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit72"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline7"
+                                    app:layout_constraintStart_toStartOf="@+id/verline6"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit76"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal1"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit74"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit75"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline10"
+                                    app:layout_constraintStart_toStartOf="@+id/verline9"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit73"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9" />
+
+                                <EditText
+                                    android:id="@+id/edit710"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline15"
+                                    app:layout_constraintStart_toStartOf="@+id/verline14"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit79"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline14"
+                                    app:layout_constraintStart_toStartOf="@+id/verline13"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit78"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintStart_toStartOf="@+id/verline12"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit711"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline16"
+                                    app:layout_constraintStart_toStartOf="@+id/verline15"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit77"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal7"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline10"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline12"
+                                    app:layout_constraintStart_toStartOf="@+id/verline11"
+                                    app:layout_constraintTop_toTopOf="@+id/horline9"
+                                    tools:ignore="MissingConstraints" />
+
+
+                                <TextView
+                                    android:id="@+id/txtNo8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_8"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal8"
+                                    android:text="@string/nok_8"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit73"
+                                    app:layout_constraintTop_toTopOf="@+id/edit73"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit82"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal8"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline11"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline10"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit83"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal8"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline12"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline11"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit85"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal8"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline14"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline13"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit86"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal8"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline14"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit61"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal6"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline8"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline7" />
+
+
+                                <TextView
+                                    android:id="@+id/txtNo6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_6"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal6"
+                                    android:text="@string/nok_6"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit61"
+                                    app:layout_constraintTop_toTopOf="@+id/edit61"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit62"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal6"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline9"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline8"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit64"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal6"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline11"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit65"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal6"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline12"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline11"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit67"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_down"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal6"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline14"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline13"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit91"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal9"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline5"
+                                    app:layout_constraintStart_toStartOf="@+id/verline4"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12" />
+
+                                <TextView
+                                    android:id="@+id/txtNo9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_9"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal9"
+                                    android:text="@string/nok_9"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit91"
+                                    app:layout_constraintTop_toTopOf="@+id/edit91"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit92"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal9"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline6"
+                                    app:layout_constraintStart_toStartOf="@+id/verline5"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit93"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal9"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline7"
+                                    app:layout_constraintStart_toStartOf="@+id/verline6"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit94"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal9"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline8"
+                                    app:layout_constraintStart_toStartOf="@+id/verline7"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit95"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal9"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline9"
+                                    app:layout_constraintStart_toStartOf="@+id/verline8"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit101"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:importantForAutofill="no"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal10"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline11"
+                                    app:layout_constraintStart_toStartOf="@+id/verline10"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12" />
+
+                                <TextView
+                                    android:id="@+id/txtNo10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:autofillHints=""
+                                    android:contentDescription="@string/nok_10"
+                                    android:fontFamily="monospace"
+                                    android:onClick="soal10"
+                                    android:text="@string/nok_10"
+                                    android:textSize="@dimen/font_tts"
+                                    app:layout_constraintStart_toStartOf="@+id/edit101"
+                                    app:layout_constraintTop_toTopOf="@+id/edit101"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit102"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal10"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline12"
+                                    app:layout_constraintStart_toStartOf="@+id/verline11"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit103"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal10"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline13"
+                                    app:layout_constraintStart_toStartOf="@+id/verline12"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit104"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal10"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline14"
+                                    app:layout_constraintStart_toStartOf="@+id/verline13"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit106"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal10"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline16"
+                                    app:layout_constraintStart_toStartOf="@+id/verline15"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+                                <EditText
+                                    android:id="@+id/edit105"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/round_tts_across"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="1"
+                                    android:onClick="soal10"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toTopOf="@+id/horline13"
+                                    app:layout_constraintEnd_toStartOf="@+id/verline15"
+                                    app:layout_constraintStart_toStartOf="@+id/verline14"
+                                    app:layout_constraintTop_toTopOf="@+id/horline12"
+                                    tools:ignore="MissingConstraints" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_button_home"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+                <TextView
+                    android:id="@+id/txtKotak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/tekan_kotak"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

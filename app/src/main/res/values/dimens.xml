@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="text_size_dash">11sp</dimen>
+    <dimen name="profil_height_above">370dp</dimen>
+    <dimen name="height_up_profil">300dp</dimen>
+    <dimen name="profil_img">130dp</dimen>
+    <dimen name="font_tts">8sp</dimen>
+    <dimen name="font_size_username">24sp</dimen>
+    <dimen name="font_size_jurusan">18sp</dimen>
+    <dimen name="border_profil_image">5dp</dimen>
+    <dimen name="JarakAntarContent">30dp</dimen>
+    <dimen name="card_height_sosmed">100dp</dimen>
+    <dimen name="martop_card_sosmed">255dp</dimen>
+    <dimen name="font_size_sosmed">13sp</dimen>
+    <dimen name="martop_klkd">120dp</dimen>
+    <dimen name="gmbr_atas">230dp</dimen>
+    <dimen name="icon_bar">80dp</dimen>
+    <dimen name="margin_materi_card">5dp</dimen>
+    <dimen name="margin_icon_bar">3dp</dimen>
+    <dimen name="margin_logo">150dp</dimen>
+    <dimen name="tts_card">25dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="margin_icon_profil">50dp</dimen>
+    <dimen name="margin_top_bar">55dp</dimen>
+</resources>
